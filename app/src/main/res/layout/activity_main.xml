@@ -1,18 +1,260 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <data>
+        <variable
+            name="activity"
+            type="com.miso.prototype.MainActivity" />
+    </data>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/btn_logout"
+            android:layout_width="14dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/logout_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/btn_search"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="30dp"
+            android:src="@drawable/search_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_camera"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="166dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/btn_background"
+            android:drawableEnd="@drawable/camera_btn"
+            android:gravity="start|center_vertical"
+            android:paddingStart="16dp"
+            android:paddingBottom="10dp"
+            android:paddingEnd="16dp"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_camera1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="사진찍기"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:translationZ="10dp"
+            app:layout_constraintStart_toStartOf="@id/btn_camera"
+            app:layout_constraintTop_toTopOf="@id/btn_camera" />
+
+        <TextView
+            android:id="@+id/text_camera2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="45dp"
+            android:text="사진으로 재활용\n하는 방법을 알아보자"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:translationZ="10dp"
+            app:layout_constraintStart_toStartOf="@id/btn_camera"
+            app:layout_constraintTop_toTopOf="@id/btn_camera" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="15dp"
+            android:background="@drawable/showdow"
+            app:layout_constraintStart_toStartOf="@id/btn_camera"
+            app:layout_constraintEnd_toEndOf="@id/btn_camera"
+            app:layout_constraintBottom_toBottomOf="@id/btn_camera"
+            app:layout_constraintTop_toBottomOf="@id/btn_camera" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_point"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/btn_background"
+            android:drawableEnd="@drawable/point_btn"
+            android:paddingStart="16dp"
+            android:paddingBottom="10dp"
+            android:paddingEnd="16dp"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_camera" />
+
+        <TextView
+            android:id="@+id/textPoint1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="포인트 교환하기"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:translationZ="10dp"
+            app:layout_constraintStart_toStartOf="@id/btn_point"
+            app:layout_constraintTop_toTopOf="@id/btn_point" />
+
+        <TextView
+            android:id="@+id/textPoint2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="45dp"
+            android:text="재활용을 통해 얻은 포인트를\n상품 구매에 사용해보자"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:translationZ="10dp"
+            app:layout_constraintStart_toStartOf="@id/btn_point"
+            app:layout_constraintTop_toTopOf="@id/btn_point" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="15dp"
+            android:background="@drawable/showdow"
+            app:layout_constraintStart_toStartOf="@id/btn_point"
+            app:layout_constraintEnd_toEndOf="@id/btn_point"
+            app:layout_constraintBottom_toBottomOf="@id/btn_point"
+            app:layout_constraintTop_toBottomOf="@id/btn_point" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_inquiry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/btn_background"
+            android:drawableEnd="@drawable/inquiry_btn"
+            android:paddingStart="16dp"
+            android:paddingBottom="10dp"
+            android:paddingEnd="16dp"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_point" />
+
+        <TextView
+            android:id="@+id/text_inquiry1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="문의하기"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:translationZ="10dp"
+            app:layout_constraintStart_toStartOf="@id/btn_inquiry"
+            app:layout_constraintTop_toTopOf="@id/btn_inquiry" />
+
+        <TextView
+            android:id="@+id/text_inquiry2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="45dp"
+            android:text="등록되지 않은 재활용\n방법을 등록하자"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:translationZ="10dp"
+            app:layout_constraintStart_toStartOf="@id/btn_inquiry"
+            app:layout_constraintTop_toTopOf="@id/btn_inquiry" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="15dp"
+            android:background="@drawable/showdow"
+            app:layout_constraintStart_toStartOf="@id/btn_point"
+            app:layout_constraintEnd_toEndOf="@id/btn_point"
+            app:layout_constraintBottom_toBottomOf="@id/btn_inquiry"
+            app:layout_constraintTop_toBottomOf="@id/btn_inquiry" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_inquiry_check"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/btn_background"
+            android:drawableEnd="@drawable/inquiry_check_btn"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="10dp"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_inquiry" />
+
+        <TextView
+            android:id="@+id/text_inquiry_check1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="문의 내역 확인하기"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:translationZ="10dp"
+            app:layout_constraintStart_toStartOf="@id/btn_inquiry_check"
+            app:layout_constraintTop_toTopOf="@id/btn_inquiry_check" />
+
+        <TextView
+            android:id="@+id/text_inquiry_check2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="50dp"
+            android:text="지금까지 문의한 내역 확인하기"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:translationZ="10dp"
+            app:layout_constraintStart_toStartOf="@id/btn_inquiry_check"
+            app:layout_constraintTop_toTopOf="@id/btn_inquiry_check" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="15dp"
+            android:background="@drawable/showdow"
+            app:layout_constraintStart_toStartOf="@id/btn_inquiry_check"
+            app:layout_constraintEnd_toEndOf="@id/btn_inquiry_check"
+            app:layout_constraintBottom_toBottomOf="@id/btn_inquiry_check"
+            app:layout_constraintTop_toBottomOf="@id/btn_inquiry_check" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
