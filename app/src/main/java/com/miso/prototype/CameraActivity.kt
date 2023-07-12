@@ -40,6 +40,10 @@ class CameraActivity : AppCompatActivity() {
         setContentView(binding.root)
         setupPermissions()
         openCamera()
+
+        binding.imageViewPhoto.setOnClickListener {
+            startActivity(Intent(this, RecyclingActivity::class.java))
+        }
     }
     private fun setupPermissions() {
         val cameraPermission = ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA)

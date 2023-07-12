@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".RecyclingActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="30dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/camera_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="255dp"
+                    android:background="@drawable/camera_img_background" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="페트병"
+                    android:textColor="@color/black"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="#생수병 #맥주병 #음료수병"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="재활용: 가능"
+                    android:textColor="@color/gray"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="분류: 페트"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:drawableEnd="@drawable/recycling"
+                    android:gravity="center_vertical"
+                    android:text="분리배출 표시:"
+                    android:textColor="@color/gray"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="분리배출 방법"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="- 투명 페트병(생수병, 콜라, 사이다, 쥬스 등의 음료수병)과\n
+ 유색 페트병(갈색 맥주병, 녹색 소주병, 녹색 사이다병 등)은 분리 배출 방법이 달라요."
+                    android:textColor="@color/gray"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text=" 1. 투명 페트병 (생수, 콜라, 사이다, 쥬스 등)"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="- 내용물을 비우고, 물로 내부를 깨끗이 세척해요."
+                    android:textColor="@color/gray"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="- 페트병 겉면에 붙어있는 상표 등의 비닐 라벨을 깨끗이 떼어내서 비닐류로\n   분리배출해요."
+                    android:textColor="@color/gray"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="- 페트병은 최대한 압축해서 뚜껑을 닫은 후 페트로 분리배출해요."
+                    android:textColor="@color/gray"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text=" 2. 유색 페트병 (생수, 콜라, 사이다, 쥬스 등)"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="- 내용물을 비우고, 물로 내부를 깨끗이 세척해요."
+                    android:textColor="@color/gray"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="- 페트병 겉면에 붙어있는 상표 등의 비닐 라벨을 깨끗이 떼어내서 비닐류로\n   분리배출해요."
+                    android:textColor="@color/gray"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="- 페트병은 최대한 압축해서 뚜껑을 닫은 후 페트로 분리배출해요."
+                    android:textColor="@color/gray"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="- 페트병 뚜껑은 닫고 함께 버려도, 따로 분리해서 버려도 무방합니다."
+                    android:textColor="@color/gray"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text=" 알아두면 좋은 점"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="- 페트병 뚜껑과 병 입구에 남아있는 링은 따로 제거하지 않아도 됩니다.\n
+  페트병 뚜껑은 일반 플라스틱 재질(HDPE)이고, 크기가 작아 재활용이\n
+  불가능하지만 파쇄 후 선별 과정에서 자동으로 분리가 됩니다."
+                    android:textColor="@color/gray"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="- 페트병을 최대한 압축해서 배출하면 부피가 줄어들어 수거 업체의\n
+  운송/압축/보관 과정에 큰 도움이 됩니다."
+                    android:textColor="@color/gray"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text=" 패트(pet)의 재활용 과정"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="- 페트 재질은 분리배출만 잘하면 옷, 가방, 시트지 등을 만들 수 있는 고급\n
+  섬유 원료가 되기도 합니다."
+                    android:textColor="@color/gray"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="- 페트 재질이 따로 선별되지 않고 플라스틱이나 다른 재질과 혼합되면 섬유\n
+  원료로 재활용될 수 없어 그대로 폐기물이 되거나 태워서 연료로 재활용됩니다."
+                    android:textColor="@color/gray"
+                    android:textSize="10sp" />
+                
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_point"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="+100 POINT"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:background="@drawable/click_btn_background"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
